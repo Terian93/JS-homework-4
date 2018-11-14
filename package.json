@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --open HOST=0.0.0.0",
-    "test": "jest",
+    "start": "webpack-dev-server --config ./webpack/webpack.dev.js --host=0.0.0.0",
     "lint": "eslint ./src",
     "lint:watch": "esw --watch",
     "stylelint": "stylelint './src/**/*.css'",
@@ -46,15 +45,7 @@
   "jest": {
     "transform": {
       "^.+\\.js$": "babel-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ]
+    }
   },
   "husky": {
     "hooks": {
